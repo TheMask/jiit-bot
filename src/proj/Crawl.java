@@ -109,37 +109,7 @@ int n=0;
       
     }            
             
-    /*
-    public static void findsym(Document d) throws Exception
-    {
-                 int n;
-                 String symstr="";
-           Elements item= d.getElementsByClass("resultitem");
-              for(Element res:item)
-                 {  //System.out.println(res); 
-                    Elements item1=res.getElementsByClass("articletitle");
-                    System.out.println(item1.text().substring(3)); 
-                      Elements item2= res.getElementsByClass("resultsymptoms");
-                     Elements item3= item2.select("li");
-                 n=0;
-                     for(Element sym:item3)
-                     {  
-                           if(n++==0)
-                           symstr= sym.text();
-                           else 
-                           {symstr=symstr+"--"+sym.text(); 
-                           n++;
-                           }
-                             
-                                 
-            
-                     }
-                      System.out.println(symstr); 
-                       insertdb(item1.text().substring(3),symstr);
-                 }   
-              
-            
-        }*/
+   
     public static Connection conn = null;
      public static String TABLE = "faculty";
     public static void insertdb(String name,String smb,String fmb) throws Exception
